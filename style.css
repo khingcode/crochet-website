@@ -8,6 +8,7 @@
 
 body{
     min-height: 100vh;
+    /* background-color: #6C5F5B; */
 
 }
 
@@ -57,39 +58,69 @@ body{
 
 /****************************************************************/
 /* content css*/
+
 .content {
     width: 100%;
     height: 85%;
     position: absolute;
-    /* top: 50%; */
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 70px;
-    
-}
-.orange-button{
-    background-color: #F6F1EE; /* orange background */
-  color: #4F4A45; /* white text */
-  border: 2px solid rgb(245, 220, 245); /* remove border */
-  padding: 10px 20px; /* add padding */
-  font-size: 16px; /* set font size */
-  cursor: pointer; /* change cursor shape on hover */
-  border-radius: 35px; /* add rounded corners */
+    top: 45%;
+    transform: translateY(-50%);
+  }
   
-}
-.left{
-    position: absolute;
-  top: 80%;
-  left: 53%;
-}
-.right{
-    position: absolute;
-  top: 80%;
-  left: 40%;
-}
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .orange-button {
+    background-color: #F6F1EE; /* orange background */
+    color: #4F4A45; /* white text */
+    border: 1px solid rgb(245, 220, 245); /* remove border */
+    padding: 10px 20px; /* add padding */
+    font-size: 16px; /* set font size */
+    cursor: pointer; /* change cursor shape on hover */
+    border-radius: 35px; /* add rounded corners */
+    margin: 0 10px; /* add some space between buttons */
+  }
+  
+ 
 
 .orange-button:hover {
   background-color: #ED7D31; /* darker orange background on hover */
+}
+
+
+/****** display of description ***************************************/
+.desc-segment{
+    
+    display: flex;
+    position:relative;
+    /* top:100%; */
+    transform: translateY(120%);
+}
+.container{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+    background-color: #F6F1EE;
+    /* margin-top: 60px; */
+}
+.container div{
+    height: 370px;
+    width: 100%;
+    background: #108cff;
+    margin: 30px;
+    text-align: center;
+    margin-top: 65px;
 }

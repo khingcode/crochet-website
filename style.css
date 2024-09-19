@@ -1,0 +1,95 @@
+* {
+    font-family: 'Open Sans', system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(213, 67, 14); */
+}
+
+body{
+    min-height: 100vh;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: #F6F1EE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 31px;
+    color: #ED7D31;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #6C5F5B;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #ED7D31;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+/****************************************************************/
+/* content css*/
+.content {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    /* top: 50%; */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 70px;
+    
+}
+.orange-button{
+    background-color: #F6F1EE; /* orange background */
+  color: #4F4A45; /* white text */
+  border: 2px solid rgb(245, 220, 245); /* remove border */
+  padding: 10px 20px; /* add padding */
+  font-size: 16px; /* set font size */
+  cursor: pointer; /* change cursor shape on hover */
+  border-radius: 35px; /* add rounded corners */
+  
+}
+.left{
+    position: absolute;
+  top: 80%;
+  left: 53%;
+}
+.right{
+    position: absolute;
+  top: 80%;
+  left: 40%;
+}
+
+.orange-button:hover {
+  background-color: #ED7D31; /* darker orange background on hover */
+}
